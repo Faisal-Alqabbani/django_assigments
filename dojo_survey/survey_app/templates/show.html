@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="info">
+      <h1>Submitted Info</h1>
+      <div class="info-content">
+        <p>Name:</p>
+        <p>{{username}}</p>
+      </div>
+      <div class="info-content">
+        <p>Location:</p>
+        <p>{{location}}</p>
+      </div>
+      <div class="info-content">
+        <p>Language:</p>
+        <p>{{lang}}</p>
+      </div>
+      <div class="info-content">
+        <p>Sure ?:</p>
+        <p>{{check}}</p>
+      </div>
+    </div>
+  </body>
+</html>
