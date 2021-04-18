@@ -11,17 +11,10 @@ def index(request):
                 user_number=int(request.POST['user_number'])
                 if user_number == request.session['number']:
                     result=1
-                    print("it's woork")
-                    print(user_number)
-                    print(request.session['number'])
                 elif user_number>request.session['number']:
                     result=2
-                    print("to hi")
-                    print(user_number)
-                    print(request.session['number'])
                 else:
                     result=3
-                    print("too low")
             else:
                 del request.session['number']
                 return redirect("/")
